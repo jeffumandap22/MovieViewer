@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="SelectedSeatCell" customModule="MovieViewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="117" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="117" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZX-PG-JN9">
+                        <rect key="frame" x="0.0" y="0.0" width="117" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF9-At-j7M">
+                        <rect key="frame" x="0.0" y="0.0" width="117" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="vF9-At-j7M" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="0tW-LM-7ps"/>
+                <constraint firstItem="MZX-PG-JN9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1ld-Gh-wZK"/>
+                <constraint firstItem="vF9-At-j7M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Q0-Zf-v5G"/>
+                <constraint firstAttribute="trailing" secondItem="MZX-PG-JN9" secondAttribute="trailing" id="AM1-fh-LLm"/>
+                <constraint firstItem="MZX-PG-JN9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MaZ-se-glZ"/>
+                <constraint firstItem="vF9-At-j7M" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="QgC-8P-MRw"/>
+                <constraint firstAttribute="bottom" secondItem="vF9-At-j7M" secondAttribute="bottom" id="dzX-qM-NEK"/>
+                <constraint firstAttribute="trailing" secondItem="vF9-At-j7M" secondAttribute="trailing" id="hkC-2J-BdY"/>
+                <constraint firstItem="vF9-At-j7M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vPi-rR-fQa"/>
+                <constraint firstAttribute="bottom" secondItem="MZX-PG-JN9" secondAttribute="bottom" id="xqB-P2-fjY"/>
+            </constraints>
+            <size key="customSize" width="117" height="50"/>
+            <connections>
+                <outlet property="cellIdLabel" destination="vF9-At-j7M" id="xvz-hs-hqb"/>
+            </connections>
+            <point key="canvasLocation" x="186.23188405797103" y="124.55357142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
